@@ -6,12 +6,7 @@
   "author": "Imamachi-n <naoto.imamachi@cureapp.jp>",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -r dist && rm -r dist.zip",
-    "ts": " tsc -p tsconfig.json",
-    "cp": "cp -f ./package.json ./dist",
-    "install": "npm --prefix ./dist install --production ./dist",
-    "zip": "cd dist/ && bestzip ../dist.zip *",
-    "build": "yarn clean && yarn ts && yarn cp && yarn install && yarn zip"
+    "tsc": "tsc -p tsconfig.json"
   },
   "devDependencies": {
     "ts-node": "^8.10.2",
