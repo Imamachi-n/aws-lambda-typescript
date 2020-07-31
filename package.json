@@ -6,13 +6,24 @@
   "author": "Imamachi-n <naoto.imamachi@cureapp.jp>",
   "license": "MIT",
   "scripts": {
-    "tsc": "tsc -p tsconfig.json"
+    "tsc": "tsc -p tsconfig.json",
+    "start": "ts-node ./src/index.ts"
   },
   "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/moment": "^2.13.0",
+    "@types/mongodb": "^3.5.25",
+    "@types/uuid": "^8.0.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "moment": "^2.27.0"
+    "@google-cloud/bigquery": "^5.0.1",
+    "aws-sdk": "^2.715.0",
+    "googleapis": "39",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
+    "mongodb": "^3.5.9",
+    "uuid": "^8.2.0"
   }
 }
